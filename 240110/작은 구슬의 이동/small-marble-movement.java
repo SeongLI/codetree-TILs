@@ -10,7 +10,7 @@ public class Main {
         int row = sc.nextInt();
         int col = sc.nextInt();
         // 상우하좌
-        int[] dr = {1, 0, -1, 0};
+        int[] dr = {-1, 0, 1, 0};
         int[] dc = {0, 1, 0, -1};
 
         String direction = sc.next();
@@ -27,7 +27,6 @@ public class Main {
         }
 
         while(t > 0){
-            System.out.println("row : " + row + " col : " + col);
             t--;
             int nr = row + dr[dir];
             int nc = col + dc[dir];
