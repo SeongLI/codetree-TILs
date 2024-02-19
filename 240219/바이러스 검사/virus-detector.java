@@ -20,7 +20,9 @@ public class Main {
             //     temp-= sub;
             //     cnt++;
             // }
-            cnt = temp % sub == 0 ? temp / sub : temp / sub + 1 ;
+            if(temp > 0){
+                cnt = temp % sub == 0 ? temp / sub : temp / sub + 1 ;
+            }
         }
         System.out.print(cnt);
     }
