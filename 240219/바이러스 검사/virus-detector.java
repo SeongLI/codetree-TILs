@@ -11,17 +11,16 @@ public class Main {
         int sup = sc.nextInt();
         int sub = sc.nextInt();
 
-        int cnt = 0;
+        int cnt = N;
         for(int i = 0 ; i < N ; i++){
             int temp = arr[i];
             temp -= sup;
-            cnt++;
             // while(temp > 0){
             //     temp-= sub;
             //     cnt++;
             // }
             if(temp > 0){
-                cnt = temp % sub == 0 ? temp / sub + 1 : temp / sub + 2 ;
+                cnt += temp % sub == 0 ? temp / sub : temp / sub + 1 ;
             }
         }
         System.out.print(cnt);
