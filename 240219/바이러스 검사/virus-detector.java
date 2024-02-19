@@ -21,8 +21,7 @@ public class Main {
             //     cnt++;
             // }
             if(temp > 0){
-                cnt = temp % sub == 0 ? temp / sub : temp / sub + 1 ;
-                cnt += 1;
+                cnt = temp % sub == 0 ? temp / sub + 1 : temp / sub + 2 ;
             }
         }
         System.out.print(cnt);
