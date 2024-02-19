@@ -16,10 +16,11 @@ public class Main {
             int temp = arr[i];
             temp -= sup;
             cnt++;
-            while(temp > 0){
-                temp-= sub;
-                cnt++;
-            }
+            // while(temp > 0){
+            //     temp-= sub;
+            //     cnt++;
+            // }
+            cnt = temp % sub == 0 ? temp / sub : temp / sub + 1 ;
         }
         System.out.print(cnt);
     }
