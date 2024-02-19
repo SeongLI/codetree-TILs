@@ -11,7 +11,7 @@ public class Main {
         int sup = sc.nextInt();
         int sub = sc.nextInt();
 
-        int cnt = N;
+        long cnt = N;
         for(int i = 0 ; i < N ; i++){
             int temp = arr[i];
             temp -= sup;
